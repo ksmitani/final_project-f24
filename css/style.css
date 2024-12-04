@@ -1,0 +1,297 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.skip a{
+    background: white;
+    position: absolute;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    top: -60px;
+}
+
+.skip a:focus{
+top: 20px;
+}
+
+/*@media only screen and (min-width: 1200px){ */
+    header{
+        background: rgba(211, 211, 211, 0.8);
+        display: block;
+        padding: 1% 13% 1%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #nav-list{
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px 0;
+        border-radius: 50px;
+        margin: 0 30%;
+    }
+    #nav-list li{
+        list-style: none;
+    }
+    #nav-list a{
+        text-decoration: none;
+        color: black;
+    }
+    #nav-list .active{
+        text-decoration: underline;
+        color: #777BEB;
+        font-weight: bold;
+    }
+
+    .header-banner{
+        padding-top: 10%;
+    }
+    /*main page layout styling*/
+    .homepage-layout{
+        background: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: auto auto auto;
+    }
+    .homepage-layout .home-title{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        margin: 4% 0 0;
+        position: relative;
+    }
+    .homepage-layout .home-subtitle{
+        grid-column: 4 / 6;
+        grid-row: 2 / 3;
+        margin: 0;
+        position: relative;
+    }
+    .homepage-layout .home-title img, .homepage-layout .home-subtitle img{
+        position: absolute;
+        width: 15%;
+    }
+    .homepage-layout .home-title img:nth-of-type(1){
+        top: 160px;
+        left: 420px;
+    }
+    .homepage-layout .home-title img:nth-of-type(2){
+        top: 285px;
+        left: 80px;
+    }
+    .homepage-layout .home-title img:nth-of-type(3){
+        top: 0px;
+        left: 0px;
+    }
+    .homepage-layout .home-subtitle img:nth-of-type(1){
+        top: -45px;
+        left: 70px;
+    }
+    .homepage-layout .home-subtitle img:nth-of-type(2){
+        top: 80px;
+        right: 50px;
+    }
+
+    .homepage-layout .home-title h1, .header-banner h1{
+        font-family: ivypresto-display, serif;
+        font-size: 90px;
+        font-style: italic;
+        font-weight: 600;
+    }
+    .homepage-layout .home-subtitle h2{
+        font-family: ivypresto-display, serif;
+        font-size: 32px;
+        text-align: end;
+        font-weight: 200;
+        font-style: italic;
+        margin: 0 0 5%;
+    }
+    .header-banner h2{
+        font-family: ivypresto-display, serif;
+        font-size: 32px;
+        font-weight: 200;
+        font-style: italic;
+    }
+    .homepage-layout .bold-color{
+        font-weight: 600;
+        color: #777BEB;
+    }
+    .homepage-layout .home-title{
+        position: relative;
+    }
+    .homepage-layout .map{
+        grid-column: 2 / 5;
+        grid-row: 1 / 4;
+        position: relative;
+        margin-top: 5%;
+    }
+    .homepage-layout button{
+        position: absolute;
+        cursor: pointer;
+    }
+    .homepage-layout button:hover{
+        background: white;
+        color: #777BEB;
+        border: solid 2px #777BEB;
+    }
+    button{
+        background-color: #777BEB;
+        padding: 1.5% 4%;
+        border: none;
+        border-radius: 35px;
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+    }
+    button a{
+        text-decoration: none;
+        color: white;
+    }
+    .homepage-layout .map #first-button{
+        top: 570px;
+        left: 420px;
+    }
+    .homepage-layout .map #second-button{
+        top: 480px;
+        left: 25px;
+    }
+    .homepage-layout .map #third-button{
+        top: 590px;
+        left: 20px;
+    }
+
+    /*tokyo, kyoto, osaka content*/
+    #main-content{
+        margin: 0 10% 5%;
+    }
+    .section-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;;
+        margin-top: 20px;
+        column-gap: 5%;
+    }
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 21%;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .header-banner h1{
+       font-size: 500%;
+       color: white;
+       margin: 0;
+    }
+    .header-banner h2{
+        font-size: 200%;
+        color: white;
+        margin: 0 0 3% 0;
+    }
+    p.item-name{
+        font-weight: bold;
+        padding: 0%;
+        margin: 4% 0 0 0;
+    }
+    p.location-name{
+        font-style: italic;
+        margin: 0;
+    }
+    .content-container img{
+        width: 100%;
+        border-radius: 20px;
+        transition: transform 0.2s;
+    }
+    .content-container img:hover{
+        transform: scale(1.05);
+    }
+
+    .filter-tab{
+        display: flex;
+        flex-direction: row;
+        column-gap: 7%;
+        padding: 2% 4% 0 4%;
+        border-bottom: solid grey 1px;
+    }
+    .filter-tab p{
+        position: relative;
+        font-size: 130%;
+    }
+    .filter-tab p.active{
+        border-bottom: 2px solid #777BEB;
+        color: #777BEB;
+    }
+    .filter-tab p:hover{
+        cursor: pointer;
+    }
+
+    /*change city header images */
+    #tokyo-header{
+        background-image: url('/images/tokyo_banner.jpg');
+    }
+    #kyoto-header{
+        background-image: url('/images/kyoto_banner.png');
+    }
+
+    /*pop-up stying*/
+    .pop-up{
+        display: flex;
+        column-gap: 4%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 15%;
+        background-color: #242627;
+        justify-content: space-evenly;
+        align-items: start;
+        color: white;
+    }
+
+    .column-1-content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 2%;
+    }
+    .column-2-content{
+        justify-self: center;
+        width: 40%;
+    }
+    .column-2-content img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    .column-3-content{
+        width: 30%;
+    }
+    .pop-up h1, .pop-up h2{
+        margin: 0 0 2% 0;
+    }
+    .pop-up p{
+        margin: 0
+    }
+    .pop-up iframe{
+        margin-top: 8%;
+        height: 315px;
+    }
+    .pop-up .close{
+        position: absolute;
+        top: 120px;
+        left: 120px;
+        font-size: 34px;
+        cursor: pointer;
+        color: white;
+    }
+
+    /*filter-tab displays*/
+    .hidden{
+        display: none;
+    }
+/*}*/
