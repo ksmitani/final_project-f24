@@ -16,12 +16,306 @@ body{
 .skip a:focus{
 top: 20px;
 }
+header{
+    background: rgba(211, 211, 211, 0.898);
+    display: block;
+    padding: 10px 0 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#nav-list{
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-radius: 50px;
+    margin: 0 5%;
+}
+#nav-list li{
+    list-style: none;
+}
+#nav-list a{
+    text-decoration: none;
+    color: black;
+}
+#nav-list .active{
+    text-decoration: underline;
+    color: #777BEB;
+    font-weight: bold;
+}
+#home-nav{
+    padding-top: 10px;
+}
+.header-banner{
+    padding: 10% 0 0 10%;
+}
+/*main page layout styling*/
+.homepage-layout{
+    background: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 15% 35%;
+}
+.homepage-layout .home-title{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    margin: 4% 0 0;
+    position: relative;
+}
+.homepage-layout .home-subtitle{
+    grid-column: 4 / 6;
+    grid-row: 2 / 3;
+    margin: 0;
+    position: relative;
+}
+.homepage-layout .home-title img, .homepage-layout .home-subtitle img{
+    position: absolute;
+    width: 5vw;
+}
+.homepage-layout .home-title img:nth-of-type(1){
+    top: 37%;
+    left: 86%;
+}
+.homepage-layout .home-title img:nth-of-type(2){
+    top: 62%;
+    left: 17%;
+}
+.homepage-layout .home-title img:nth-of-type(3){
+    top: 0%;
+    left: -10%;
+}
+.homepage-layout .home-subtitle img:nth-of-type(1){
+    top: -31%;
+    left: 20%;
+}
+.homepage-layout .home-subtitle img:nth-of-type(2){
+    top: 38%;
+    right: -10%;
+}
+.homepage-layout .home-title h1, .header-banner h1{
+    font-family: ivypresto-display, serif;
+    font-size: 6vw;
+    font-style: italic;
+    font-weight: 600;
+}
+.homepage-layout .home-subtitle h2{
+    font-family: ivypresto-display, serif;
+    font-size: 2vw;
+    text-align: end;
+    font-weight: 200;
+    font-style: italic;
+    margin: 0 0 5%;
+}
+.header-banner h2{
+    font-family: ivypresto-display, serif;
+    font-size: 32px;
+    font-weight: 200;
+    font-style: italic;
+}
+.homepage-layout .bold-color{
+    font-weight: 600;
+    color: #777BEB;
+}
+.homepage-layout .home-title{
+    position: relative;
+}
+.homepage-layout .map{
+    grid-column: 2 / 5;
+    grid-row: 1 / 4;
+    margin-top: 5%;
+    position: relative;
+    max-width: 100%;
+}
+.homepage-layout .map img{
+    width: 100%;
+    height: auto;
+}
+.homepage-layout button{
+    position: absolute;
+    cursor: pointer;
+}
+.homepage-layout button:hover{
+    background: white;
+    color: #777BEB;
+    border: solid 2px #777BEB;
+}
+button{
+    background-color: #777BEB;
+    padding: 1.5% 4%;
+    border: none;
+    border-radius: 35px;
+    font-size: 1.2vw;
+    color: white;
+    font-weight: 700;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+.homepage-layout .map #first-button{
+    top: 72%;
+    left: 66%;
+}
+.homepage-layout .map #second-button{
+    top: 58%;
+    right: 58%;
+}
+.homepage-layout .map #third-button{
+    top: 74%;
+    right: 63%;
+}
 
-/*@media only screen and (min-width: 1200px){ */
+/*tokyo, kyoto, osaka content*/
+#main-content{
+    margin: 0 10% 5%;
+}
+.section-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+    column-gap: 5%;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 47%;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.header-banner h1{
+   font-size: 500%;
+   color: white;
+   margin: 0;
+}
+.header-banner h2{
+    font-size: 200%;
+    color: white;
+    margin: 0 0 3% 0;
+}
+p.item-name{
+    font-weight: bold;
+    padding: 0%;
+    margin: 4% 0 0 0;
+}
+p.location-name{
+    font-style: italic;
+    margin: 0;
+}
+.content-container img{
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.2s;
+}
+.content-container img:hover{
+    transform: scale(1.05);
+}
+
+.filter-tab{
+    display: flex;
+    flex-direction: row;
+    column-gap: 7%;
+    padding: 2% 4% 0 4%;
+    border-bottom: solid grey 1px;
+}
+.filter-tab p{
+    position: relative;
+    font-size: 130%;
+}
+.filter-tab p.active{
+    border-bottom: 2px solid #777BEB;
+    color: #777BEB;
+}
+.filter-tab p:hover{
+    cursor: pointer;
+}
+
+/*change city header images */
+#tokyo-header{
+    background-image: url('/images/tokyo_banner.jpg');
+}
+#kyoto-header{
+    background-image: url('/images/kyoto_banner.png');
+}
+
+/*pop-up stying*/
+.pop-up{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 50%;
+    padding: 10% 15% 0 15%;
+    background-color: #242627;
+    justify-content: space-evenly;
+    align-items: start;
+    color: white;
+}
+
+.column-1-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 2%;
+}
+.column-2-content{
+    justify-self: center;
+    width: 100%;
+}
+.column-2-content img{
+    width: 100%;
+    border-radius: 20px;
+}
+.column-3-content{
+    width: 100%;
+}
+.pop-up .column-1-content h1{
+    font-size: 6.5vw;
+}
+.pop-up .column-3-content h2{
+    font-size: 5vw;
+}
+.pop-up h1, .pop-up h2{
+    margin: 0 0 2% 0;
+}
+.pop-up p{
+    margin: 0
+}
+.pop-up iframe{
+    margin-top: 8%;
+    width: 100%;
+    height: 20vw;
+}
+.pop-up .close{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 34px;
+    cursor: pointer;
+    color: white;
+}
+
+/*filter-tab displays*/
+.hidden{
+    display: none;
+}
+
+
+
+/*desktop view*/
+@media only screen and (min-width: 800px){
     header{
-        background: rgba(211, 211, 211, 0.8);
+        background: rgba(211, 211, 211, 0.898);
         display: block;
-        padding: 1% 13% 1%;
+        padding: 10px 0 10px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -30,7 +324,7 @@ top: 20px;
         background: rgb(255, 255, 255);
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         padding: 10px 0;
         border-radius: 50px;
         margin: 0 30%;
@@ -47,16 +341,18 @@ top: 20px;
         color: #777BEB;
         font-weight: bold;
     }
-
+    #home-nav{
+        padding-top: 10px;
+    }
     .header-banner{
-        padding-top: 10%;
+        padding: 10% 0 0 10%;
     }
     /*main page layout styling*/
     .homepage-layout{
         background: rgb(255, 255, 255);
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 50% 15% 35%;
     }
     .homepage-layout .home-title{
         grid-column: 1 / 3;
@@ -72,38 +368,37 @@ top: 20px;
     }
     .homepage-layout .home-title img, .homepage-layout .home-subtitle img{
         position: absolute;
-        width: 15%;
+        width: 5vw;
     }
     .homepage-layout .home-title img:nth-of-type(1){
-        top: 160px;
-        left: 420px;
+        top: 37%;
+        left: 86%;
     }
     .homepage-layout .home-title img:nth-of-type(2){
-        top: 285px;
-        left: 80px;
+        top: 62%;
+        left: 17%;
     }
     .homepage-layout .home-title img:nth-of-type(3){
-        top: 0px;
-        left: 0px;
+        top: 0%;
+        left: -10%;
     }
     .homepage-layout .home-subtitle img:nth-of-type(1){
-        top: -45px;
-        left: 70px;
+        top: -31%;
+        left: 20%;
     }
     .homepage-layout .home-subtitle img:nth-of-type(2){
-        top: 80px;
-        right: 50px;
+        top: 38%;
+        right: -10%;
     }
-
     .homepage-layout .home-title h1, .header-banner h1{
         font-family: ivypresto-display, serif;
-        font-size: 90px;
+        font-size: 6vw;
         font-style: italic;
         font-weight: 600;
     }
     .homepage-layout .home-subtitle h2{
         font-family: ivypresto-display, serif;
-        font-size: 32px;
+        font-size: 2vw;
         text-align: end;
         font-weight: 200;
         font-style: italic;
@@ -125,8 +420,13 @@ top: 20px;
     .homepage-layout .map{
         grid-column: 2 / 5;
         grid-row: 1 / 4;
-        position: relative;
         margin-top: 5%;
+        position: relative;
+        max-width: 100%;
+    }
+    .homepage-layout .map img{
+        width: 100%;
+        height: auto;
     }
     .homepage-layout button{
         position: absolute;
@@ -142,7 +442,7 @@ top: 20px;
         padding: 1.5% 4%;
         border: none;
         border-radius: 35px;
-        font-size: 20px;
+        font-size: 1.2vw;
         color: white;
         font-weight: 700;
     }
@@ -151,16 +451,16 @@ top: 20px;
         color: white;
     }
     .homepage-layout .map #first-button{
-        top: 570px;
-        left: 420px;
+        top: 72%;
+        left: 66%;
     }
     .homepage-layout .map #second-button{
-        top: 480px;
-        left: 25px;
+        top: 58%;
+        right: 58%;
     }
     .homepage-layout .map #third-button{
-        top: 590px;
-        left: 20px;
+        top: 74%;
+        right: 63%;
     }
 
     /*tokyo, kyoto, osaka content*/
@@ -233,21 +533,23 @@ top: 20px;
 
     /*change city header images */
     #tokyo-header{
-        background-image: url('../images/tokyo_banner.jpg');
+        background-image: url('/images/tokyo_banner.jpg');
     }
     #kyoto-header{
-        background-image: url('../images/kyoto_banner.png');
+        background-image: url('/images/kyoto_banner.png');
     }
 
     /*pop-up stying*/
     .pop-up{
         display: flex;
+        flex-direction: row;
         column-gap: 4%;
         position: fixed;
         top: 0;
         left: 0;
         height: 100%;
-        padding: 15%;
+        width: 70%;
+        padding: 10% 15% 0 15%;
         background-color: #242627;
         justify-content: space-evenly;
         align-items: start;
@@ -255,6 +557,7 @@ top: 20px;
     }
 
     .column-1-content{
+        width: 28%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -269,7 +572,7 @@ top: 20px;
         border-radius: 20px;
     }
     .column-3-content{
-        width: 30%;
+        width: 28%;
     }
     .pop-up h1, .pop-up h2{
         margin: 0 0 2% 0;
@@ -279,19 +582,25 @@ top: 20px;
     }
     .pop-up iframe{
         margin-top: 8%;
-        height: 315px;
+        width: 100%;
+        height: 20vw;
     }
     .pop-up .close{
         position: absolute;
-        top: 120px;
-        left: 120px;
+        top: 100px;
+        left: 100px;
         font-size: 34px;
         cursor: pointer;
         color: white;
     }
-
+    .pop-up .column-1-content h1{
+        font-size: 4vw;
+    }
+    .pop-up .column-3-content h2{
+        font-size: 2.9vw;
+    }
     /*filter-tab displays*/
     .hidden{
         display: none;
     }
-/*}*/
+}
