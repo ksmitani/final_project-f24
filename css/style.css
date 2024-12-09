@@ -247,16 +247,21 @@ p.location-name{
 .pop-up{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    height: 80%;
-    width: 50%;
-    padding: 10% 15% 0 15%;
+    position: fixed;/* */
+    top: 50%; /* */
+    left: 50%; /* */
+    transform: translate(-50%, -50%); /* */
+    max-height: 80vh;
+    width: 58%;
+    padding: 10% 15% 10% 15%;
     background-color: #242627;
     justify-content: space-evenly;
     align-items: start;
     color: white;
+    overflow: auto;
+}
+body.no-scroll{
+    overflow: hidden;
 }
 
 .column-1-content{
@@ -269,6 +274,7 @@ p.location-name{
 .column-2-content{
     justify-self: center;
     width: 100%;
+    margin: 5% 0 2% 0;
 }
 .column-2-content img{
     width: 100%;
@@ -545,11 +551,12 @@ p.location-name{
         flex-direction: row;
         column-gap: 4%;
         position: fixed;
+        transform: none;
         top: 0;
         left: 0;
         height: 100%;
         width: 70%;
-        padding: 10% 15% 0 15%;
+        padding: 10% 15% 10% 15%;
         background-color: #242627;
         justify-content: space-evenly;
         align-items: start;
