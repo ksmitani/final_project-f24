@@ -441,10 +441,10 @@ body.no-scroll{
     .homepage-layout button:hover{
         background: white;
         color: #5F64E7;
-        border: solid 2px #777BEB;
+        border: solid 2px #5F64E7;
     }
     button{
-        background-color: #777BEB;
+        background-color: #5F64E7;
         padding: 1.5% 4%;
         border: none;
         border-radius: 35px;
