@@ -26,6 +26,7 @@ function setUpPopUpHandlers(){
             const popUp = document.getElementById(popUpId);
             if (popUp) {
                 popUp.classList.remove("hidden");
+                document.body.classList.add("no-scroll")
             } else {
                 console.error(`Pop-up with ID ${popUpId} not found.`);
             }
@@ -36,6 +37,7 @@ function setUpPopUpHandlers(){
     document.querySelectorAll(".pop-up .close").forEach((closeButton) => {
         closeButton.addEventListener("click", function(){
             this.parentElement.classList.add("hidden");
+            document.body.classList.remove("no-scroll")
         });
     });
 }
