@@ -237,10 +237,10 @@ p.location-name{
 
 /*change city header images */
 #tokyo-header{
-    background-image: url('/images/tokyo_banner.jpg');
+    background-image: url('../images/tokyo_banner.jpg');
 }
 #kyoto-header{
-    background-image: url('/images/kyoto_banner.png');
+    background-image: url('../images/kyoto_banner.png');
 }
 
 /*pop-up stying*/
