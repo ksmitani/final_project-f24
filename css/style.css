@@ -56,17 +56,17 @@ header{
     background: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 50% 15% 35%;
+    grid-template-rows: auto auto auto;
 }
 .homepage-layout .home-title{
-    grid-column: 1 / 3;
+    grid-column: 1 / 6;
     grid-row: 1 / 2;
     margin: 4% 0 0;
     position: relative;
 }
 .homepage-layout .home-subtitle{
     grid-column: 4 / 6;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     margin: 0;
     position: relative;
 }
@@ -75,16 +75,16 @@ header{
     width: 5vw;
 }
 .homepage-layout .home-title img:nth-of-type(1){
-    top: 37%;
-    left: 86%;
+    top: 20%;
+    left: 99%;
 }
 .homepage-layout .home-title img:nth-of-type(2){
-    top: 62%;
-    left: 17%;
+    top: 64%;
+    left: 24%;
 }
 .homepage-layout .home-title img:nth-of-type(3){
     top: 0%;
-    left: -10%;
+    left: -4%;
 }
 .homepage-layout .home-subtitle img:nth-of-type(1){
     top: -31%;
@@ -122,8 +122,8 @@ header{
     position: relative;
 }
 .homepage-layout .map{
-    grid-column: 2 / 5;
-    grid-row: 1 / 4;
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
     margin-top: 5%;
     position: relative;
     max-width: 100%;
@@ -146,7 +146,7 @@ button{
     padding: 1.5% 4%;
     border: none;
     border-radius: 35px;
-    font-size: 1.2vw;
+    font-size: 2vw;
     color: white;
     font-weight: 700;
 }
@@ -539,10 +539,10 @@ body.no-scroll{
 
     /*change city header images */
     #tokyo-header{
-        background-image: url('/images/tokyo_banner.jpg');
+        background-image: url('../images/tokyo_banner.jpg');
     }
     #kyoto-header{
-        background-image: url('/images/kyoto_banner.png');
+        background-image: url('../images/kyoto_banner.png');
     }
 
     /*pop-up stying*/
