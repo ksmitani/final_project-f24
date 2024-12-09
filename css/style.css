@@ -12,6 +12,7 @@ body{
     z-index: 1;
     top: -60px;
 }
+
 .skip a:focus{
 top: 20px;
 }
@@ -41,7 +42,7 @@ header{
 }
 #nav-list .active{
     text-decoration: underline;
-    color: #777BEB;
+    color: #5F64E7;
     font-weight: bold;
 }
 #home-nav{
@@ -115,7 +116,7 @@ header{
 }
 .homepage-layout .bold-color{
     font-weight: 600;
-    color: #777BEB;
+    color: #5F64E7;
 }
 .homepage-layout .home-title{
     position: relative;
@@ -137,11 +138,11 @@ header{
 }
 .homepage-layout button:hover{
     background: white;
-    color: #777BEB;
-    border: solid 2px #777BEB;
+    color: #5F64E7;
+    border: solid 2px #5F64E7;
 }
 button{
-    background-color: #777BEB;
+    background-color: #5F64E7;
     padding: 1.5% 4%;
     border: none;
     border-radius: 35px;
@@ -227,8 +228,8 @@ p.location-name{
     font-size: 130%;
 }
 .filter-tab p.active{
-    border-bottom: 2px solid #777BEB;
-    color: #777BEB;
+    border-bottom: 2px solid #5F64E7;
+    color: #5F64E7;
 }
 .filter-tab p:hover{
     cursor: pointer;
@@ -343,7 +344,7 @@ body.no-scroll{
     }
     #nav-list .active{
         text-decoration: underline;
-        color: #777BEB;
+        color: #5F64E7;
         font-weight: bold;
     }
     #home-nav{
@@ -417,7 +418,7 @@ body.no-scroll{
     }
     .homepage-layout .bold-color{
         font-weight: 600;
-        color: #777BEB;
+        color: #5F64E7;
     }
     .homepage-layout .home-title{
         position: relative;
@@ -439,7 +440,7 @@ body.no-scroll{
     }
     .homepage-layout button:hover{
         background: white;
-        color: #777BEB;
+        color: #5F64E7;
         border: solid 2px #777BEB;
     }
     button{
@@ -529,8 +530,8 @@ body.no-scroll{
         font-size: 130%;
     }
     .filter-tab p.active{
-        border-bottom: 2px solid #777BEB;
-        color: #777BEB;
+        border-bottom: 2px solid #5F64E7;
+        color: #5F64E7;
     }
     .filter-tab p:hover{
         cursor: pointer;
